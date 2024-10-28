@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Adopt_Style.css">
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="../images/logo.png">
+<title>Adoption</title>
+</head>
+<body>
+    <style>
+
+        @font-face {
+        font-family: 'GentySans';
+        src: url('../fonts/GentySans-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;}
+        
+        @font-face {
+        font-family: 'Montaser';
+        src: url('../fonts/Montserrat-Arabic Regular 400.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;}
+        
+        .button {
+        background-color: #FFA500;
+        border: none;
+        color: white;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 50%;}
+
+        .left {
+        position: absolute;
+        top: 580px;
+        left: 1260px;
+        transform: rotate(0deg);}
+
+        .right {
+        position: absolute;
+        top: 580px;
+        left: 1340px;
+        transform: rotate(180deg);}
+        
+        .circular-rectangle-button {
+        background-color: #224050;
+        color: #fff;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 25px;
+        position: absolute;
+        top: 125px; left: 110px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 23px;
+        font-family: 'Montaser', sans-serif;}
+
+        .circular-rectangle-button:hover {
+        background-color: #146f96;}
+
+        .button::before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 15px 10px 0;
+        border-color: transparent #fff transparent transparent;}
+        
+        body {
+        background-image: url('../images/Background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;}
+        
+        .rectangle {
+        width: 2000px;
+        height: 40px;
+        position:fixed;
+        bottom:0px;
+        background-color: #f4a905;}
+        
+        .Genty {
+        pointer-events: none;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        color: #062d3e;
+        text-align: left;
+        padding: 20px;
+        font-family: 'GentySans', sans-serif;}
+        
+        .Montaser {
+
+            color: #062d3e;
+            text-align: left;
+            padding: 20px;
+            font-family: 'Montaser', sans-serif;}
+    
+</style>
+
+<div class = "rectangle"></div>
+<div class="Genty">
+    <!-- Pawsome Pals Title -->
+    <p><span style="font-size: 30px; 
+    position: absolute; 
+    top: 50px; left: 150px;">Pawsome Pals</span></p>
+    
+    <!-- Pawsome Pals Main Title -->
+    <h1><span style="font-size: 40px; 
+    position: absolute; 
+    top: 100px; left: 50%; 
+    transform: translateX(-50%);">DOGS</span></h1>
+
+    <!-- Pawsome Pals logo -->
+    <img src="../images/logo.png" 
+    width="40" 
+    height="40"
+    style="position: absolute; top: 45px; 
+    left: 90px;">
+
+</div>
+
+<div class="Montaser">
+    <!-- Texts -->
+    
+    <p><span style="font-size: 17px; 
+    position: absolute; 
+    top: 150px; left: 50%; 
+    transform: translateX(-50%);
+    text-align: center">
+    Whether you're looking for a playful pup, a gentle senior, or a loyal companion, we provide detailed profiles of each
+    dog, including their personality, health status, and unique traits.</span></p>
+
+    <!-- Buttons-->
+    <a href="Home.html"><span style="
+    font-size: 23px;
+    color: black;
+    position: absolute; 
+    top: 50px; 
+    left: 900px;">Home</span></a>
+
+    <a href="Adopt.html"><span style="
+    font-size: 23px; 
+    color: #f4a905;
+    position: absolute; 
+    top: 50px; 
+    left: 1000px;">Adopt</span></a>
+
+    <a href="Rehome.html"><span style="
+    font-size: 23px;
+    color: black; 
+    position: absolute; 
+    top: 50px; 
+    left: 1100px;">Rehome</span></a>
+
+    <a href="About.html"><span style="
+    font-size: 23px; 
+    color: black; 
+    position: absolute; 
+    top: 50px; 
+    left: 1230px;">About</span></a>
+
+    <a href="Feedback.html"><span style="
+    font-size: 23px; 
+    color: black; 
+    position: absolute; 
+    top: 50px; 
+    left: 1330px;">Feedback</span></a>
+</div>
+
+<div class = "format">
+    <div class="card">
+        <img src="../images/dog1.png" alt="Dog Image" id="card1">
+        <h2 id="dogname1">Blanca</h2>
+        <ul>
+            <li id="dogdesc1">
+                Meet Blanca, a lovable pup with a sleek black coat and an adorable head tilt. Playful, sweet, and full of charm!
+            </li>
+        </ul>
+        <button id="dogbutton1" 
+        onclick="openLink1()">More Details</button>
+    </div>
+
+    <div class="card">
+        <img src="../images/dog2.png" alt="Dog Image 2" id="card2">
+        <h2 id="dogname2">Chichay</span></h2>
+        <ul>
+            <li id="dogdesc2">
+                Chichay is a Chow Chow with a fluffy golden-brown coat and an irresistibly cute pink tongue, radiating pure adorableness!
+            </li>
+        </ul>
+        <button id="dogbutton2" 
+        onclick="openLink2()">More Details</button>
+    </div>
+
+    <div class="card">
+        <img src="../images/dog3.png" alt="Dog Image 3" id="card3">
+        <h2 id="dogname3">Spark</span></h2>
+        <ul>
+            <li id="dogdesc3">
+                Spark is a Yorkshire Terrier with a silky, golden coat. His small size and cute face give him an energetic, lovable charm!
+            </li>
+        </ul>
+        <button id="dogbutton3" 
+        onclick="openLink3()">More Details</button>
+    </div>
+
+    <div class="card">
+        <img src="../images/dog4.png" alt="Dog Image 4" id="card4">
+        <h2 id="dogname4">Mike</span></h2>
+        <ul>
+            <li id="dogdesc4">
+                Mike is a cute Pug with a wrinkly face, big round eyes, and a soft fawn coat. His sweet expression is simply irresistible!
+            </li>
+        </ul>
+        <button id="dogbutton4" 
+        onclick="openLink4()">More Details</button>
+    </div>
+
+</div>
+
+<button 
+onclick="MinusOne()" 
+class="button left"
+id="left-button"></button>
+
+<button 
+onclick="PlusOne()" 
+class="button right"
+id="right-button"></button>
+
+<a href="Adopt.html"
+class="circular-rectangle-button">
+    Return
+</a>
+
+<script src="Adopt_Dog.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'GentySans';
+    src: url('../../fonts/GentySans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+    
+@font-face {
+    font-family: 'Montaser';
+    src: url('../../fonts/Montserrat-Arabic Regular 400.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.rectangle {
+    width: 2000px;
+    height: 40px;
+    position: fixed;
+    bottom:0px;
+    background-color: #f4a905;
+}
+
+.petmodule {
+    width: 1000px;
+    height: 520px;
+    position: absolute;
+    bottom: 70px;
+    left: 50%; 
+    transform: translateX(-50%);
+    background-color: #e4e2d7;
+    border-radius: 25px;
+    }
+
+    .petmodule img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 25px;
+        position: absolute;
+        top: 40px;
+        left: 80px;
+    } 
+
+    .petmodule h2{
+        position: absolute;
+        top: 30px;
+        margin-top: 10px;
+        margin-left: 375px;
+        font-size: 40px;
+        color: #f4a905;
+        font-family: 'Montaser', sans-serif;
+    }
+
+    .petmodule ul {
+        margin-top: 100px;
+        margin-left: 336px;
+        font-size: 30px;
+        color: #7b7b7b;
+        font-family: 'Montaser', sans-serif;
+}
+    .petmodule hr {
+        border: 2px solid #7b7b7b;
+        position: absolute;
+        top: 240px;
+        left: 375px;
+        width: 58%; 
+        margin: 20px auto;
+}
+
+    .description{
+        margin-left: 375px;
+        font-size: 25px;
+        color: #7b7b7b;
+        font-family: 'Montaser', sans-serif;
+}
+
+.petmodule button {
+    background-color: #224050;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Montaser', sans-serif;
+    position: absolute;
+    bottom: 90px;
+    left: 80px;
+  }
+  
+  .petmodule button:hover {
+    background-color: #146f96;
+  }
+    
+.previews{
+    display: flex;
+    gap: 12px;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 80px;
+    position: absolute;
+    bottom: 210px;
+    left: 345px;
+}
+.previews img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+
+body {
+    background-image: url('../../images/Background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    float: left;
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px auto;
+    background-color: #f9f9f9;
+    border-radius: 25px;
+    font-family: 'Montaser', sans-serif;
+  }
+
+  .card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+
+  .card h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #f4a905;
+  }
+
+  .card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0px;
+  }
+
+  .card li {
+    font-size: 12px;
+    color: #666;
+  }
+
+  .card button {
+    background-color: #224050;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Montaser', sans-serif;
+  }
+
+  .card button:hover {
+    background-color: #146f96;
+}
+
+.Genty {
+    pointer-events: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    color: #062d3e;
+    text-align: left;
+    padding: 20px;
+    font-family: 'GentySans', sans-serif;
+}
+        
+.Montaser {
+
+    color: #062d3e;
+    text-align: left;
+    padding: 20px;
+    font-family: 'Montaser', sans-serif;
+}
+
+.circular-rectangle-button {
+    background-color: #224050;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+    top: 125px; left: 110px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 23px;
+    font-family: 'Montaser', sans-serif;}
+
+    .circular-rectangle-button:hover {
+    background-color: #146f96;}
